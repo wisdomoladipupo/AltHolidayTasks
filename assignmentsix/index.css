@@ -1,0 +1,439 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1400px;
+  background: #f5f5e8;
+  font-family: "Inter", system-ui;
+}
+
+/* header section css */
+header {
+  text-align: center;
+  width: 50rem;
+  margin: 5em auto;
+}
+header h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: -3em;
+  font-weight: bold;
+  font-size: 2em;
+}
+header h1 p:nth-child(2) {
+  display: flex;
+  gap: 0.5em;
+  margin-top: -0.7em;
+}
+header em {
+  display: flex;
+  color: #0065fe;
+}
+header p {
+  font-weight: bold;
+  margin-top: -0.7em;
+}
+
+.sign_up_container {
+  display: flex;
+  gap: 2.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_up_container button {
+  padding: 0.7em 1em;
+  color: white;
+  background: #0065fe;
+  border: none;
+  border-radius: 2em;
+}
+
+.sign_up_container a {
+  color: #0065fe;
+  text-decoration: none;
+}
+
+.banner_icon_container {
+  margin: 0px auto;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* users analysis section */
+
+.web_user_analysis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em auto;
+  margin-left: 7em;
+  gap: 1em;
+}
+
+.web_user_analysis h2:nth-child(1) {
+  width: 10em;
+}
+
+.web_user_analysis h3 {
+  width: 8em;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+.web_user_analysis h3 p {
+  font-size: 0.5em;
+}
+
+.scissors_section {
+  margin: 1em auto;
+  margin-left: 2.3em;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  gap: 1em;
+  font-weight: bold;
+}
+.scissors_heading h2 {
+  font-size: 2em;
+}
+.scissors_heading h2 em {
+  color: #0065fe;
+}
+.scissors_heading p {
+  font-size: 1.4em;
+}
+.scissors_section div p {
+  font-size: 0.9em;
+}
+
+.sciccors_advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sciccors_advantages div {
+  width: 50%;
+}
+
+/* perfect price section */
+
+.perfect_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 0em;
+  text-align: center;
+}
+.perfect_price h2 {
+  font-size: 2.5em;
+}
+.perfect_price h2 em {
+  color: #0065fe;
+}
+
+.perfect_price p {
+  width: 50em;
+  text-wrap: wrap;
+}
+
+/* card section css */
+.card_section {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 20em;
+  height: 25em;
+  border: 1px solid #c4c4c0;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1em;
+  border-radius: 1em;
+}
+
+.card_two {
+  background: #1e3448;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 22em;
+  height: 34em;
+  border: 1px solid #c4c4c0;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1em;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.card ul li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.card_two_headings {
+  margin-top: 4em;
+}
+
+.card_two ul {
+  display: flex;
+  margin-top: 3em;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+
+/* pricing buttons css */
+
+.pricing_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 3em auto;
+}
+
+.pricing_buttons button {
+  padding: 0.6em;
+  border-radius: 1em;
+  border: 0.1em solid #0065fe;
+}
+
+.pricing_buttons button:nth-child(1) {
+  color: #0065fe;
+  padding: 0.7em 0.6em;
+  width: 10em;
+}
+
+.pricing_buttons button:nth-child(2) {
+  background-color: #0065fe;
+  color: white;
+  padding: 0.6em 0.6em;
+  width: 10em;
+}
+
+/* form css section */
+.background_pattern_image {
+  width: 100%;
+  height: 60rem;
+  z-index: 10;
+  position: relative;
+  top: -19em;
+}
+
+.background_pattern_image img {
+  width: 100%;
+  height: 60rem;
+  z-index: 10;
+}
+
+.pattern_icon_container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -60.6em;
+  z-index: 12;
+}
+
+.form_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  z-index: 15;
+}
+
+.form_container form {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5e8;
+  padding: 1.7em 2.5em;
+  border-radius: 2em;
+  position: absolute;
+  top: -94em;
+  width: 20em;
+  margin: 2em auto;
+  z-index: 15;
+}
+
+.second_input_row {
+  display: flex;
+  gap: 0.3em;
+  margin: 1.8em auto;
+}
+
+.second_input_row input {
+  width: 12em;
+  height: 2em;
+  border: 1px solid #0065fe;
+  border-radius: 0.8em;
+  padding: 0.2em 0.2em;
+}
+
+input {
+  padding: 0.2em 0.3em;
+}
+
+.first {
+  border: 1px solid #0065fe;
+  width: 25em;
+  height: 2em;
+  border-radius: 0.8em;
+}
+
+.form_container form button {
+  background: #0065fe;
+  border: none;
+  color: white;
+  width: 25em;
+  height: 2.6em;
+  padding: 2.5em 2em;
+  border-radius: 1.9em;
+}
+
+/* summary css section */
+
+.faq_section {
+  position: relative;
+  top: -20em;
+  margin: 0.2em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em 5em;
+  margin: 0.2em auto;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 27em;
+}
+
+summary::after {
+  content: "";
+  width: 18px;
+  height: 15px;
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 0.2s;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  border-radius: 5px 0;
+}
+
+details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.1em auto;
+  border-radius: 5px;
+  border-top: 1px solid #c4c4c0;
+}
+
+details summary img {
+  width: 2.5em;
+  height: 1.5em;
+  margin-top: 1.2em;
+}
+.detail_section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail_section p {
+  font-size: 0.9em;
+}
+
+/* optimization section */
+
+.pattern_icon_container2 {
+  display: flex;
+  position: relative;
+  top: -19em;
+}
+.link {
+  text-align: center;
+  position: relative;
+  top: -49em;
+}
+
+.link h2 {
+  font-size: 2em;
+  color: white;
+}
+
+.link button {
+  background: #0065fe;
+  padding: 0.7em 3em;
+  border-radius: 1em;
+  border: none;
+}
+
+/* footer _serction css */
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_section ul {
+  list-style-type: none;
+}
+
+.footer_text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_text div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.footer_text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text ul li {
+  margin: 0.3em 0px;
+  font-weight: bold;
+}
