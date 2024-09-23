@@ -36,13 +36,13 @@ form {
   border-radius: 15px;
 }
 .form_container {
-  background: #f7f3f3;
+
   width: 100%;
 
   background: #f7f3f3;
   max-width: 25rem;
   margin: 5em auto;
-  padding: 3em;
+  padding: 5em;
   border-radius: 15px;
 }
 
@@ -65,8 +65,12 @@ form select {
   height: 5em;
   border-radius: 15px;
   border: none;
-
+  padding: 0.5em;
   font-size: 1em;
+}
+
+::placeholder{
+  padding: 1em;
 }
 form button {
   width: 18em;
@@ -107,7 +111,7 @@ form button {
     align-items: center;
     background: #f7f3f3;
     max-width: 120em;
-    padding: 5em;
+    padding: 7em;
     border-radius: 15px;
     align-self: flex-start;
     margin-right: 5em;
@@ -125,6 +129,9 @@ form button {
     width: 15em;
     margin: 1em auto;
   }
+  ::placeholder{
+    padding: 1em;
+  }
   label {
     display: flex;
     flex-direction: column;
@@ -136,6 +143,7 @@ form button {
     height: 3.5em;
     border-radius: 10px;
     border: none;
+    padding: 0.5em;
     padding-left: 0.3em;
     font-size: 1em;
   }
