@@ -146,7 +146,7 @@ header p {
 /* card section css */
 .card_section {
   display: flex;
-  gap: 1em;
+  gap: 0em;
   justify-content: center;
   align-items: center;
 }
@@ -247,11 +247,19 @@ header p {
 
 .pattern_icon_container {
   display: flex;
-  justify-content: space-between;
   position: relative;
   top: -60.6em;
   z-index: 12;
 }
+
+.right_side_pattern img{
+position: absolute;
+top: 10em;
+left: 5rem;
+transform: rotate(180deg);
+}
+
+
 
 .form_container {
   position: relative;

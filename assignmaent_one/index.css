@@ -70,6 +70,8 @@ form select {
 }
 form button {
   width: 18em;
+  font-size: 1em;
+  font-weight: bold;
   padding: 0.8em;
   border-radius: 10px;
   border: none;
@@ -140,9 +142,14 @@ form button {
   form input:focus {
     outline-width: 0;
   }
+  form label{
+    margin: 0.5em 0.5em 0.8em 0.7em;
+  }
   form button {
     width: 105em;
     height: 5em;
+    font-size: 1em;
+    font-weight: bold;
     padding: 1.5em;
     border-radius: 10px;
     border: none;
