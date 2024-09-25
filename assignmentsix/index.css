@@ -2,11 +2,28 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  max-width: 1400px;
+
   background: #f5f5e8;
   font-family: "Inter", system-ui;
 }
 
+/* nav css section */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+.nav_login{
+  display:flex;
+  gap: 1em;
+}
 /* header section css */
 header {
   text-align: center;
@@ -242,24 +259,24 @@ header p {
 .background_pattern_image img {
   width: 100%;
   height: 60rem;
+  position: relative;
   z-index: 10;
 }
 
 .pattern_icon_container {
   display: flex;
-  position: relative;
-  top: -60.6em;
-  z-index: 12;
+  justify-content: space-between;
+  position: absolute;
+  top: 18em;
+  z-index: 20;
 }
 
-.right_side_pattern img{
-position: absolute;
-top: 10em;
-left: 5rem;
-transform: rotate(180deg);
+.right_side_pattern img {
+  position: absolute;
+  top: 3em;
+  right: -2em;
+  transform: rotate(180deg);
 }
-
-
 
 .form_container {
   position: relative;
@@ -278,10 +295,10 @@ transform: rotate(180deg);
   padding: 1.7em 2.5em;
   border-radius: 2em;
   position: absolute;
-  top: -94em;
+  top: -61em;
   width: 20em;
   margin: 2em auto;
-  z-index: 15;
+  z-index: 50;
 }
 
 .second_input_row {
@@ -323,13 +340,15 @@ input {
 
 .faq_section {
   position: relative;
-  top: -20em;
+  top: -30em;
   margin: 0.2em auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 90;
+  background: #f5f5e8;
 }
 
 summary {
@@ -388,15 +407,41 @@ details summary img {
 
 /* optimization section */
 
-.pattern_icon_container2 {
-  display: flex;
+.background_pattern_image2 {
+  width: 100%;
+  height: 60rem;
+  z-index: 10;
   position: relative;
   top: -19em;
 }
+
+.background_pattern_image2 img {
+  width: 100%;
+  height: 60rem;
+  position: relative;
+  z-index: 10;
+}
+
+.pattern_icon_container2 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 18em;
+  z-index: 20;
+}
+
+.right_side_pattern2 img {
+  position: absolute;
+  top: 3em;
+  right: -2em;
+  transform: rotate(180deg);
+}
+
 .link {
   text-align: center;
   position: relative;
   top: -49em;
+  z-index: 100;
 }
 
 .link h2 {
@@ -412,10 +457,30 @@ details summary img {
 }
 
 /* footer _serction css */
+.footer_pattern{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  z-index: -1;
+}
+
+.left_side{
+  position: absolute;
+  top: 19em;
+  bottom: 0;
+}
+.right_side{
+  position: absolute;
+  top:30em;
+  right: 0;
+  bottom: 0;
+}
 
 .footer_section {
   display: flex;
   justify-content: space-between;
+  padding: 7em;
 }
 
 .footer_section ul {
@@ -428,6 +493,7 @@ details summary img {
 }
 
 .footer_text div {
+  width: 25%;
   display: flex;
   flex-direction: column;
 
@@ -441,7 +507,10 @@ details summary img {
   align-items: center;
 }
 
-.footer_text ul li {
+.footer_text ul li h3 {
   margin: 0.3em 0px;
   font-weight: bold;
+}
+.footer_text ul li {
+  text-wrap: nowrap;
 }
