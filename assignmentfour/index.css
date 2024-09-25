@@ -77,6 +77,10 @@ input {
   width: 17em;
 }
 
+::placeholder {
+  padding: 1em;
+}
+
 .form_first_row {
   display: flex;
   flex-direction: column;
@@ -311,6 +315,9 @@ button {
     padding: 1em;
     border-radius: 0.6em;
     width: 17em;
+  }
+  ::placeholder {
+    padding: 1em;
   }
 
   .form_first_row {
@@ -549,6 +556,9 @@ button {
     padding: 1em;
     border-radius: 0.6em;
     width: 17em;
+  }
+  ::placeholder {
+    padding: 1em;
   }
 
   .form_first_row {
