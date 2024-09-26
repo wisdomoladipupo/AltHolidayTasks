@@ -20,9 +20,27 @@ nav ul {
   gap: 3em;
 }
 
-.nav_login{
-  display:flex;
+nav ul li:nth-child(1){
+   color: #0065fe;
+}
+.nav_login {
+  display: flex;
   gap: 1em;
+}
+
+.nav_login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.nav_login button{
+  padding: 0.5em 0.5em;
+  width: 10em;
+  height: 3em;
+  border-radius: 2em;
+  background: #0065fe;
+  border: none;
 }
 /* header section css */
 header {
@@ -138,6 +156,22 @@ header p {
 }
 
 /* perfect price section */
+.price_heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.black_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, black, white);
+  margin-top: 1em;
+  border-radius: 1em;
+  width: 0.4em;
+  height: 3em;
+}
 
 .perfect_price {
   display: flex;
@@ -149,6 +183,10 @@ header p {
   text-align: center;
 }
 .perfect_price h2 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 0.4em;
   font-size: 2.5em;
 }
 .perfect_price h2 em {
@@ -273,9 +311,9 @@ header p {
 
 .right_side_pattern img {
   position: absolute;
-  top: 3em;
-  right: -2em;
-  transform: rotate(180deg);
+  top: -6em;
+  right: -46em;
+
 }
 
 .form_container {
@@ -351,6 +389,15 @@ input {
   background: #f5f5e8;
 }
 
+.faq_heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.faq_heading .black_line {
+  margin-top: 1em;
+}
 summary {
   list-style: none;
   display: grid;
@@ -415,6 +462,21 @@ details summary img {
   top: -19em;
 }
 
+.footer_pattern2 {
+  position: relative;
+  z-index: 30;
+}
+
+.left_side2 {
+  position: absolute;
+  top: -6em;
+}
+.right_side2 {
+  position: absolute;
+  top: 1em;
+  left: 50em;
+}
+
 .background_pattern_image2 img {
   width: 100%;
   height: 60rem;
@@ -423,6 +485,44 @@ details summary img {
 }
 
 .pattern_icon_container2 {
+  position: relative;
+  top: 3em;
+  right: -2em;
+  transform: rotate(180deg);
+  z-index: 25;
+}
+
+.right_side_pattern2 img {
+  position: absolute;
+  top: 13em;
+  right: -2em;
+  transform: rotate(180deg);
+  z-index: 15;
+}
+
+.link {
+  text-align: center;
+  position: relative;
+  top: -55em;
+  z-index: 20;
+}
+
+/* .background_pattern_image {
+  width: 100%;
+  height: 60rem;
+  z-index: 10;
+  position: relative;
+  top: -19em;
+}
+
+.background_pattern_image img {
+  width: 100%;
+  height: 60rem;
+  position: relative;
+  z-index: 10;
+}
+
+.pattern_icon_container {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -430,19 +530,12 @@ details summary img {
   z-index: 20;
 }
 
-.right_side_pattern2 img {
+.right_side_pattern img {
   position: absolute;
   top: 3em;
   right: -2em;
   transform: rotate(180deg);
-}
-
-.link {
-  text-align: center;
-  position: relative;
-  top: -49em;
-  z-index: 100;
-}
+} */
 
 .link h2 {
   font-size: 2em;
@@ -457,22 +550,35 @@ details summary img {
 }
 
 /* footer _serction css */
-.footer_pattern{
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_pattern {
   display: flex;
   justify-content: space-between;
+
   position: relative;
   bottom: 0;
   z-index: -1;
 }
 
-.left_side{
+.scissors_logo_image {
+  margin-top: 1.1em;
+}
+.footer_text {
+  display: flex;
+  align-items: start;
+}
+.left_side {
   position: absolute;
   top: 19em;
   bottom: 0;
 }
-.right_side{
+.right_side {
   position: absolute;
-  top:30em;
+  top: 30em;
   right: 0;
   bottom: 0;
 }

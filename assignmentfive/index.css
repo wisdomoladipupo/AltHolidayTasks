@@ -6,6 +6,8 @@ body {
 }
 
 main {
+  position: relative;
+  top: 3em;
   margin: 10rem auto;
   text-align: center;
   background: rgb(167, 168, 205);
@@ -14,11 +16,12 @@ main {
   border-radius: 0.4em;
 }
 main p:nth-child(1) {
-  position: relative;
-  top: 3.2em;
-  left: 16.3em;
+  position: absolute;
+  top: 3.9em;
+  left: 17em;
   padding: 0.4em;
   width: 15em;
+  z-index: 26;
   background: rgb(253, 241, 181);
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
@@ -26,7 +29,9 @@ main p:nth-child(1) {
   border-bottom-left-radius: 0.3em;
 }
 .image_container {
-
+  position: absolute;
+  top: 5em;
+  left: 17em;
   width: 25em;
   height: 29em;
   text-align: center;
@@ -37,26 +42,39 @@ main p:nth-child(1) {
   background: rgb(255, 255, 255);
   z-index: 1;
   font-weight: 400;
-}
-.image_container img {
-  object-fit: cover;
   text-align: center;
+}
+
+
+.image_container img {
+  position: absolute;
+  right: 0.2em;
+  object-fit: cover;
   width: 25.5em;
   height: 17em;
   z-index: 1;
-  margin-top: 1em;
+
 }
-.image_title{
+.image_title {
   display: flex;
   align-items: center;
   justify-content: start;
   padding: 1em;
+  margin: 0.4em auto;
 }
-.image_title p{
+.image_title p {
   margin-left: 0.2em;
   font-size: 1.2em;
 }
-.text_description{
+.info_section{
+  position: absolute;
+  top: 22em;
+  left: 17.3em;
+  text-align: center;
+  width: 25em;
+  z-index: 50;
+}
+.text_description {
   display: flex;
   align-items: center;
   justify-content: center;
