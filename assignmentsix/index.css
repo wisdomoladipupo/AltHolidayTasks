@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-
+  height: 800px;
   background: #f5f5e8;
   font-family: "Inter", system-ui;
 }
@@ -20,21 +20,20 @@ nav ul {
   gap: 3em;
 }
 
-nav ul li:nth-child(1){
-   color: #0065fe;
+nav ul li:nth-child(1) {
+  color: #0065fe;
 }
 .nav_login {
   display: flex;
   gap: 1em;
 }
 
-.nav_login{
+.nav_login {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-.nav_login button{
+.nav_login button {
   padding: 0.5em 0.5em;
   width: 10em;
   height: 3em;
@@ -302,8 +301,6 @@ header p {
 }
 
 .pattern_icon_container {
-  display: flex;
-  justify-content: space-between;
   position: absolute;
   top: 18em;
   z-index: 20;
@@ -311,9 +308,8 @@ header p {
 
 .right_side_pattern img {
   position: absolute;
-  top: -6em;
-  right: -46em;
-
+  top: -7em;
+  right: 0.2em;
 }
 
 .form_container {
@@ -459,7 +455,7 @@ details summary img {
   height: 60rem;
   z-index: 10;
   position: relative;
-  top: -19em;
+  top: -40em;
 }
 
 .footer_pattern2 {
@@ -469,11 +465,11 @@ details summary img {
 
 .left_side2 {
   position: absolute;
-  top: -6em;
+  top: -30em;
 }
 .right_side2 {
   position: absolute;
-  top: 1em;
+  top: -19em;
   left: 50em;
 }
 
@@ -495,7 +491,7 @@ details summary img {
 .right_side_pattern2 img {
   position: absolute;
   top: 13em;
-  right: -2em;
+  left: 29em;
   transform: rotate(180deg);
   z-index: 15;
 }
@@ -503,39 +499,10 @@ details summary img {
 .link {
   text-align: center;
   position: relative;
-  top: -55em;
+  top: -75em;
   z-index: 20;
 }
 
-/* .background_pattern_image {
-  width: 100%;
-  height: 60rem;
-  z-index: 10;
-  position: relative;
-  top: -19em;
-}
-
-.background_pattern_image img {
-  width: 100%;
-  height: 60rem;
-  position: relative;
-  z-index: 10;
-}
-
-.pattern_icon_container {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 18em;
-  z-index: 20;
-}
-
-.right_side_pattern img {
-  position: absolute;
-  top: 3em;
-  right: -2em;
-  transform: rotate(180deg);
-} */
 
 .link h2 {
   font-size: 2em;
@@ -554,6 +521,8 @@ details summary img {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: -70rem;
 }
 .footer_pattern {
   display: flex;
@@ -575,16 +544,19 @@ details summary img {
   position: absolute;
   top: 19em;
   bottom: 0;
+  z-index: -10;
 }
 .right_side {
   position: absolute;
   top: 30em;
   right: 0;
   bottom: 0;
+  z-index: -10;
 }
 
 .footer_section {
   display: flex;
+  align-items: start;
   justify-content: space-between;
   padding: 7em;
 }
@@ -601,6 +573,7 @@ details summary img {
 .footer_text div {
   width: 25%;
   display: flex;
+  align-items: self-start;
   flex-direction: column;
 
   align-items: center;
@@ -610,7 +583,7 @@ details summary img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: self-start;
 }
 
 .footer_text ul li h3 {
@@ -620,3 +593,16 @@ details summary img {
 .footer_text ul li {
   text-wrap: nowrap;
 }
+
+.background_footer {
+  background: rgb(30, 52, 72);
+  position: relative;
+  height: 90rem;
+  width: 100%;
+  top: 30rem;
+  bottom: 0;
+}
+
+
+/* css for smaller screens */
+
