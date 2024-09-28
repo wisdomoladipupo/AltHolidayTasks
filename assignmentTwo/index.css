@@ -87,7 +87,7 @@ main div h2 {
   main div h2 {
     position: absolute;
     top: -0.5em;
-    left: 1.9em;
+    left: 1.2em;
     padding: 0.3em;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ main div h2 {
     -webkit-box-shadow: 0px 14px 5px 0px rgba(201, 155, 62, 1);
     -moz-box-shadow: 0px 14px 5px 0px rgba(201, 155, 62, 1);
     box-shadow: 0px 14px 5px 0px rgba(201, 155, 62, 1);
-    width: 20rem;
+    width: 18rem;
     height: 5rem;
     background: rgb(255, 191, 0);
     border-radius: 4px;
