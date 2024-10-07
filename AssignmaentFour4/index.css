@@ -36,7 +36,6 @@ form {
   border-radius: 15px;
 }
 .form_container {
-
   width: 100%;
 
   background: #f7f3f3;
@@ -69,7 +68,7 @@ form select {
   font-size: 1em;
 }
 
-::placeholder{
+::placeholder {
   padding: 1em;
 }
 form button {
@@ -81,6 +80,16 @@ form button {
   border: none;
   height: auto;
   background: rgb(148, 224, 235);
+}
+
+.activity_level select {
+  width: 31em;
+  height: 4.4em;
+  margin: 0 auto;
+}
+.password input {
+  width: 30em;
+  height: 3em;
 }
 
 @media (min-width: 768px) {
@@ -129,7 +138,7 @@ form button {
     width: 15em;
     margin: 1em auto;
   }
-  ::placeholder{
+  ::placeholder {
     padding: 1em;
   }
   label {
@@ -142,15 +151,13 @@ form button {
     width: 15em;
     height: 3.5em;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #2b2929;
     padding: 0.5em;
     padding-left: 0.3em;
     font-size: 1em;
   }
-  form input:focus {
-    outline-width: 0;
-  }
-  form label{
+
+  form label {
     margin: 0.5em 0.5em 0.8em 0.7em;
   }
   form button {
@@ -165,8 +172,8 @@ form button {
     background: rgb(148, 224, 235);
   }
   .activity_level select {
-    width: 30em;
-    height: 3em;
+    width: 31em;
+    height: 4.4em;
     margin: 0 auto;
   }
   .password input {
