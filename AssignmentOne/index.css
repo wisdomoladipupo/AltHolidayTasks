@@ -5,6 +5,51 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6em;
+  background: rgb(255, 0, 149);
+}
+nav ul {
+  background: rgb(255, 0, 149);
+  border-bottom-right-radius: 1em;
+  list-style-type: none;
+  width: 22em;
+  height: 15em;
+  z-index: -1;
+  display: none;
+  animation: drop 4s both;
+  transition: all ease-in-out;
+}
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: none;
+  }
+  50%,
+  to {
+    opacity: 1;
+    transform: translateY(2em);
+  }
+}
+
+nav ul li {
+  font-size: 1.3em;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+nav svg {
+  width: 2em;
+  height: 2em;
+}
+
 h1 {
   background: rgb(255, 0, 149);
   text-align: center;
@@ -31,5 +76,38 @@ main {
   border-radius: 10px;
   justify-content: center;
   position: relative;
-  top: 10rem;
+  top: 12rem;
+  z-index: -4;
+}
+
+/* css for smaller screen sizes  */
+@media (max-width: 450px) {
+  h1 {
+    background: rgb(255, 0, 149);
+    text-align: center;
+    width: 10em;
+    height: 1.6em;
+    border-radius: 10px;
+    padding: 0.5em;
+    position: absolute;
+    top: -1.4em;
+  }
+
+  main {
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 18rem;
+    height: 15rem;
+    background: #ffffff;
+    display: flex;
+    line-height: 2em;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+  }
 }

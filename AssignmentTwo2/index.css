@@ -2,7 +2,53 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background: rgb(32, 32, 32);
+  background: rgb(205, 206, 231);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4em;
+  background: white;
+  z-index: 30;
+}
+
+nav svg {
+  position: fixed;
+  right: 0;
+  width: 3em;
+  height: 3em;
+}
+nav ul {
+  background: white;
+  position: fixed;
+  top: 3em;
+  right: -2em;
+  width: 15em;
+  animation: drop 4s both;
+  transition: all 4s;
+  list-style-type: none;
+  display: none;
+}
+nav ul li {
+  margin-bottom: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+@keyframes drop {
+  from {
+    transform: none;
+    opacity: 0;
+  }
+  50%,
+  to {
+    transform: translateX(-2em);
+    opacity: 1;
+  }
 }
 
 main {
@@ -45,7 +91,6 @@ main p:nth-child(1) {
   text-align: center;
 }
 
-
 .image_container img {
   position: absolute;
   right: 0.2em;
@@ -53,7 +98,6 @@ main p:nth-child(1) {
   width: 25.5em;
   height: 17em;
   z-index: 1;
-
 }
 .image_title {
   display: flex;
@@ -66,7 +110,7 @@ main p:nth-child(1) {
   margin-left: 0.2em;
   font-size: 1.2em;
 }
-.info_section{
+.info_section {
   position: absolute;
   top: 22em;
   left: 17.3em;
@@ -80,4 +124,83 @@ main p:nth-child(1) {
   justify-content: center;
   margin-top: -2em;
   font-weight: bold;
+}
+
+/* css for smaller phone screens */
+
+@media (max-width: 450px) {
+  main {
+    position: relative;
+    top: 3em;
+    margin: 10rem auto;
+    text-align: center;
+    background: rgb(167, 168, 205);
+    width: 60rem;
+    height: 40em;
+    border-radius: 0.4em;
+  }
+  main p:nth-child(1) {
+    position: absolute;
+    top: 3.9em;
+    left: 17em;
+    padding: 0.4em;
+    width: 15em;
+    z-index: 26;
+    background: rgb(253, 241, 181);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+  }
+  .image_container {
+    position: absolute;
+    top: 5em;
+    left: 17em;
+    width: 25em;
+    height: 29em;
+    text-align: center;
+    margin-bottom: -2em;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .image_container img {
+    position: absolute;
+    right: 0.2em;
+    object-fit: cover;
+    width: 25.5em;
+    height: 17em;
+    z-index: 1;
+  }
+  .image_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1em;
+    margin: 0.4em auto;
+  }
+  .image_title p {
+    margin-left: 0.2em;
+    font-size: 1.2em;
+  }
+  .info_section {
+    position: absolute;
+    top: 22em;
+    left: 17.3em;
+    text-align: center;
+    width: 25em;
+    z-index: 50;
+  }
+  .text_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2em;
+    font-weight: bold;
+  }
 }
