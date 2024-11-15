@@ -75,3 +75,85 @@ main{
 transform: scale(120%);
   }
 }
+
+
+
+@media (max-width: 450px) {
+  body {
+    padding: 2em;
+    margin: 0;
+    font-family: "Roboto", serif;
+    background: #003b3e;
+    color: white;
+    text-align: center;
+  }
+  
+  header{
+    display: flex;
+    align-items: start;
+  }
+  header img{
+    width: 5em;
+    height: 5em;
+    border-radius: 1em;
+    margin: 1em 1em;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em auto;
+  }
+  .assign{
+    font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 23em;
+    border-radius: 2em;
+    height: 20em;
+  
+  }
+  .assign_1{
+    width: 50%;
+  }
+  .assign img {
+    width: 5em;
+    height: 5em;
+    border: 1em;
+  
+  }
+  
+  .assign img:hover{
+    border: 3px solid rgb(22, 21, 21);
+    animation: enlarge 3s both;
+  }
+  .instru-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+  .instru-container svg{
+    width: 2em;
+    height: 2em;
+  }
+  .instruct{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #837d7d;
+  }
+  @keyframes enlarge {
+    from{
+      transform: none;
+    }
+    50%,to{
+  transform: scale(120%);
+    }
+  } 
+}
