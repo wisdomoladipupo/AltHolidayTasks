@@ -7,25 +7,33 @@ body {
   text-align: center;
 }
 
-header{
+header {
   display: flex;
   align-items: start;
+  height: 30rem;
+  background: rgb(230, 223, 223);
 }
-header img{
+header img {
   width: 5em;
   height: 5em;
   border-radius: 1em;
   margin: 1em 1em;
 }
-main{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+h1{
+  text-shadow: 2px 4px gray;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 auto;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 2em auto;
 }
-.assign{
+.assign {
   font-family: "Roboto", serif;
+  font-size: 0.9em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,50 +41,48 @@ main{
   border: 0px solid;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 23em;
-  border-radius: 2em;
-  height: 20em;
+  max-width: 20em;
+  border-radius: 0.5em;
+  height: 17em;
+  background-color: rgba(128, 128, 128, 0.1);
+  margin: 1em auto;
+}
 
-}
-.assign_1{
-  width: 50%;
-}
 .assign img {
   width: 5em;
   height: 5em;
   border: 1em;
-
+  border-radius: 1em;
 }
 
-.assign img:hover{
+.assign img:hover {
   border: 3px solid rgb(22, 21, 21);
   animation: enlarge 3s both;
 }
-.instru-container{
+.instru-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1em;
 }
-.instru-container svg{
+.instru-container svg {
   width: 2em;
   height: 2em;
 }
-.instruct{
+.instruct {
   font-size: 2em;
   font-weight: bold;
   text-shadow: 2px 2px #837d7d;
 }
 @keyframes enlarge {
-  from{
+  from {
     transform: none;
   }
-  50%,to{
-transform: scale(120%);
+  50%,
+  to {
+    transform: scale(120%);
   }
 }
-
-
 
 @media (max-width: 450px) {
   body {
@@ -87,25 +93,25 @@ transform: scale(120%);
     color: white;
     text-align: center;
   }
-  
-  header{
+
+  header {
     display: flex;
     align-items: start;
   }
-  header img{
+  header img {
     width: 5em;
     height: 5em;
     border-radius: 1em;
     margin: 1em 1em;
   }
-  main{
+  main {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 2em auto;
   }
-  .assign{
+  .assign {
     font-family: "Roboto", serif;
     display: flex;
     flex-direction: column;
@@ -117,43 +123,42 @@ transform: scale(120%);
     max-width: 23em;
     border-radius: 2em;
     height: 20em;
-  
   }
-  .assign_1{
+  .assign_1 {
     width: 50%;
   }
   .assign img {
     width: 5em;
     height: 5em;
     border: 1em;
-  
   }
-  
-  .assign img:hover{
+
+  .assign img:hover {
     border: 3px solid rgb(22, 21, 21);
     animation: enlarge 3s both;
   }
-  .instru-container{
+  .instru-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
   }
-  .instru-container svg{
+  .instru-container svg {
     width: 2em;
     height: 2em;
   }
-  .instruct{
+  .instruct {
     font-size: 2em;
     font-weight: bold;
     text-shadow: 2px 2px #837d7d;
   }
   @keyframes enlarge {
-    from{
+    from {
       transform: none;
     }
-    50%,to{
-  transform: scale(120%);
+    50%,
+    to {
+      transform: scale(120%);
     }
-  } 
+  }
 }
