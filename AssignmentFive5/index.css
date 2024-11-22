@@ -29,6 +29,11 @@ nav ul li:nth-child(5) {
   border-radius: 0.4em;
 }
 
+
+nav ul li a{
+  text-decoration: none;
+  color: #0a0909;
+}
 hr {
   position: relative;
   top: -7rem;
@@ -245,7 +250,7 @@ button {
 @media (max-width: 450px) {
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     left: 0;
     right: 16em;
@@ -253,7 +258,8 @@ button {
   }
   nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     align-items: center;
     gap: 1.2em;
   }
@@ -418,72 +424,11 @@ button {
     border-radius: 0.4em;
   }
   .freelancer_section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    display: none;
+   
   }
 
-  .freelancer_section h2:nth-child(1) {
-    margin-top: -3em;
-  }
-  .first_h2 {
-    margin-right: 14em;
-    font-size: 2em;
-    color: #0a0909;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  .freelancer_section h2:nth-child(2) {
-    font-size: 2.5em;
-    margin-top: -0.5em;
-  }
-  .freelancer_section a {
-    color: white;
-    text-wrap: nowrap;
-  }
-
-  .freelancer_section ul {
-    display: flex;
-
-    gap: 2em;
-  }
-  .freelancer_section ul li {
-    display: flex;
-    gap: 0.2em;
-    align-items: self-start;
-    margin-left: -2.3em;
-    text-wrap: nowrap;
-  }
-
-  .freelancer_section ul li svg {
-    width: 1em;
-    height: 1em;
-  }
-  .question_span {
-    background: white;
-  }
-  .question_span b {
-    width: 1.2em;
-    height: 0.1em;
-    font-size: 0.8em;
-    padding: 1.1em 1.4em;
-    border: 2px solid rgb(63, 63, 177);
-    border-radius: 26em;
-  }
-  .client_profile {
-    display: flex;
-    align-items: center;
-    gap: 0.1em;
-    margin-right: 5em;
-    text-wrap: nowrap;
-  }
-  .client_profile img {
-    width: 2.3em;
-    height: 1.8em;
-    padding: 1.4em 1.4em;
-    border-radius: 75em;
-  }
+ 
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -659,64 +604,9 @@ button {
     border-radius: 0.4em;
   }
   .freelancer_section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    display: none;
+  
   }
 
-  .freelancer_section h2:nth-child(1) {
-    margin-top: -3em;
-  }
-  .freelancer_section h2:nth-child(2) {
-    font-size: 2.5em;
-    margin-top: -0.5em;
-  }
-  .freelancer_section a {
-    color: white;
-    text-wrap: nowrap;
-  }
 
-  .freelancer_section ul {
-    display: flex;
-
-    gap: 2em;
-  }
-  .freelancer_section ul li {
-    display: flex;
-    gap: 0.2em;
-    align-items: self-start;
-    margin-left: -2.3em;
-    text-wrap: nowrap;
-  }
-
-  .freelancer_section ul li svg {
-    width: 1em;
-    height: 1em;
-  }
-  .question_span {
-    background: white;
-  }
-  .question_span b {
-    width: 1.2em;
-    height: 0.1em;
-    font-size: 0.8em;
-    padding: 1.1em 1.4em;
-    border: 2px solid rgb(63, 63, 177);
-    border-radius: 26em;
-  }
-  .client_profile {
-    display: flex;
-    align-items: center;
-    gap: 0.1em;
-    margin-right: 5em;
-    text-wrap: nowrap;
-  }
-  .client_profile img {
-    width: 2.3em;
-    height: 1.8em;
-    padding: 1.4em 1.4em;
-    border-radius: 75em;
-  }
 }
