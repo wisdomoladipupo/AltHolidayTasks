@@ -14,7 +14,7 @@ nav {
   position: sticky;
   top: 0;
   display: block;
-border-bottom: 1px solid #1e3448;
+  border-bottom: 1px solid #1e3448;
 }
 
 nav ul {
@@ -29,11 +29,10 @@ nav ul li:nth-child(1) {
   color: #0065fe;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-
 }
 .nav_login {
   display: flex;
@@ -54,7 +53,7 @@ nav ul li a{
   border: none;
 }
 
-nav svg{
+nav svg {
   display: none;
 }
 /* header section css */
@@ -114,6 +113,9 @@ header p {
   justify-content: center;
   align-items: center;
 }
+.banner_icon_container img:nth-child(2) {
+  width: 100%;
+}
 
 /* users analysis section */
 
@@ -121,6 +123,7 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 3em auto;
   margin-left: 7em;
   gap: 1em;
@@ -414,13 +417,15 @@ summary {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2em 5em;
-  margin: 0.2em auto;
+  gap: 2em;
   padding: 10px;
   font-weight: bold;
   margin-left: 27em;
 }
 
+summary:active {
+  outline: none;
+}
 summary::after {
   content: "";
   width: 18px;
@@ -487,7 +492,7 @@ details summary img {
 .right_side2 {
   position: absolute;
   top: -19em;
-  left: 50em;
+  left: 45em;
 }
 
 .background_pattern_image2 img {
@@ -520,7 +525,6 @@ details summary img {
   z-index: 20;
 }
 
-
 .link h2 {
   font-size: 2em;
   color: white;
@@ -544,7 +548,6 @@ details summary img {
 .footer_pattern {
   display: flex;
   justify-content: space-between;
-
   position: relative;
   bottom: 0;
   z-index: -1;
@@ -620,6 +623,4 @@ details summary img {
   bottom: 0;
 }
 
-
 /* css for smaller screens */
-

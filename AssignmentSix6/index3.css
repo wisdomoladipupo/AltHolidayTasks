@@ -1,564 +1,631 @@
-@media (min-width: 767px) and (max-width: 1023px){
-    body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 800px;
-        background: #f5f5e8;
-        font-family: "Inter", system-ui;
-      }
-    
-      /* nav css section */
-      nav {
-        display: flex;
-        justify-content: space-between;
-      }
-    
-      nav ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        gap: 3em;
-      }
-    
-      nav ul li:nth-child(1) {
-        color: #0065fe;
-      }
-      .nav_login {
-        display: flex;
-        gap: 1em;
-      }
-    
-      .nav_login {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .nav_login button {
-        padding: 0.5em 0.5em;
-        width: 10em;
-        height: 3em;
-        border-radius: 2em;
-        background: #0065fe;
-        border: none;
-      }
-      /* header section css */
-      header {
-        text-align: center;
-        width: 50rem;
-        margin: 5em auto;
-      }
-      header h1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: -3em;
-        font-weight: bold;
-        font-size: 2em;
-      }
-      header h1 p:nth-child(2) {
-        display: flex;
-        gap: 0.5em;
-        margin-top: -0.7em;
-      }
-      header em {
-        display: flex;
-        color: #0065fe;
-      }
-      header p {
-        font-weight: bold;
-        margin-top: -0.7em;
-      }
-    
-      .sign_up_container {
-        display: flex;
-        gap: 2.5em;
-        align-items: center;
-        justify-content: center;
-      }
-    
-      .sign_up_container button {
-        padding: 0.7em 1em;
-        color: white;
-        background: #0065fe;
-        border: none;
-        border-radius: 2em;
-      }
-    
-      .sign_up_container a {
-        color: #0065fe;
-        text-decoration: none;
-      }
-    
-      .banner_icon_container {
-        display: none;
-      }
-    
-      /* users analysis section */
-    
-      .web_user_analysis {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 3em auto;
-        margin-left: 7em;
-        gap: 1em;
-      }
-    
-      .web_user_analysis h2:nth-child(1) {
-        width: 10em;
-      }
-    
-      .web_user_analysis h3 {
-        width: 8em;
-        font-size: 1.9em;
-        font-weight: bold;
-      }
-      .web_user_analysis h3 p {
-        font-size: 0.5em;
-      }
-    
-      .scissors_section {
-        margin: 1em auto;
-        margin-left: 2.3em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        font-weight: bold;
-      }
-      .scissors_heading h2 {
-        font-size: 2em;
-      }
-      .scissors_heading h2 em {
-        color: #0065fe;
-      }
-      .scissors_heading p {
-        font-size: 1.4em;
-      }
-      .scissors_section div p {
-        font-size: 0.9em;
-      }
-    
-      .sciccors_advantages {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-    
-      .sciccors_advantages div {
-        width: 50%;
-      }
-    
-      /* perfect price section */
-      .price_heading {
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
-      }
-    
-      .black_line {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to bottom, black, white);
-        margin-top: 1em;
-        border-radius: 1em;
-        width: 0.4em;
-        height: 3em;
-      }
-    
-      .perfect_price {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        gap: 0em;
-        text-align: center;
-      }
-      .perfect_price h2 {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        gap: 0.4em;
-        font-size: 2.5em;
-      }
-      .perfect_price h2 em {
-        color: #0065fe;
-      }
-    
-      .perfect_price p {
-        width: 50em;
-        text-wrap: wrap;
-      }
-    
-      /* card section css */
-      .card_section {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        justify-content: center;
-        align-items: center;
-      }
-      .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 20em;
-        height: 25em;
-        border: 1px solid #c4c4c0;
-        text-align: center;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-        border: 1em;
-        border-radius: 1em;
-        background: #1e3448;
-        color: white;
-      }
-    
-      /* .card_two {
-            background: #1e3448;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            max-width: 22em;
-            height: 34em;
-            border: 1px solid #c4c4c0;
-            text-align: center;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-            border: 1em;
-          } */
-    
-      .card ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none;
-      }
-      .card ul li {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-      }
-      .card_two_headings {
-        margin-top: 4em;
-      }
-    
-      .card_two ul {
-        display: flex;
-        margin-top: 3em;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none;
-      }
-    
-      /* pricing buttons css */
-    
-      .pricing_buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1em;
-        margin: 3em auto;
-      }
-    
-      .pricing_buttons button {
-        padding: 0.6em;
-        border-radius: 1em;
-        border: 0.1em solid #0065fe;
-      }
-    
-      .pricing_buttons button:nth-child(1) {
-        color: #0065fe;
-        padding: 0.7em 0.6em;
-        width: 10em;
-      }
-    
-      .pricing_buttons button:nth-child(2) {
-        background-color: #0065fe;
-        color: white;
-        padding: 0.6em 0.6em;
-        width: 10em;
-      }
-    
-      /* form css section */
-      .background_pattern_image {
-        display: none;
-      }
-    
-      .background_pattern_image img {
-        display: none;
-      }
-    
-      .pattern_icon_container {
-        display: none;
-      }
-    
-      .right_side_pattern img {
-        display: none;
-      }
-    
-      .form_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-weight: bold;
-        z-index: 15;
-      }
-    
-      .form_container form {
-        display: flex;
-        flex-direction: column;
-        background: #f5f5e8;
-        padding: 1.7em 2.5em;
-        border-radius: 2em;
-        width: 20em;
-        margin: 2em auto;
-        z-index: 50;
-      }
-    
-      .second_input_row {
-        display: flex;
-        gap: 0.3em;
-        margin: 1.8em auto;
-      }
-    
-      .second_input_row input {
-        width: 12em;
-        height: 2em;
-        border: 1px solid #0065fe;
-        border-radius: 0.8em;
-        padding: 0.2em 0.2em;
-      }
-    
-      input {
-        padding: 0.2em 0.3em;
-      }
-    
-      .first {
-        border: 1px solid #0065fe;
-        width: 25em;
-        height: 2em;
-        border-radius: 0.8em;
-      }
-    
-      .form_container form button {
-        background: #0065fe;
-        border: none;
-        color: white;
-        width: 25em;
-        height: 2.6em;
-        padding: 2.5em 2em;
-        border-radius: 1.9em;
-      }
-    
-      /* summary css section */
-    
-      .faq_section {
-        position: relative;
-        top: 10em;
-        margin: 0.2em auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 90;
-        background: #f5f5e8;
-      }
-    
-      .faq_heading {
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
-      }
-    
-      .faq_heading .black_line {
-        margin-top: 1em;
-      }
-      summary {
-        list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em 5em;
-        margin: 0.2em auto;
-        padding: 10px;
-        font-weight: bold;
-      }
-    
-      summary::after {
-        content: "";
-        width: 18px;
-        height: 15px;
-        background-size: cover;
-        margin-left: 0.75em;
-        transition: 0.2s;
-      }
-    
-      summary::-webkit-details-marker {
-        display: none;
-      }
-    
-      details[open] summary {
-        border-radius: 5px 0;
-      }
-    
-      details {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0.1em auto;
-        border-radius: 5px;
-        border-top: 1px solid #c4c4c0;
-      }
-    
-      details summary img {
-        width: 2.5em;
-        height: 1.5em;
-        margin-top: 1.2em;
-      }
-      .detail_section {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    
-      .detail_section p {
-        font-size: 0.9em;
-      }
-    
-      /* optimization section */
-    
-      .background_pattern_image2 {
-        display: none;
-      }
-    
-      .footer_pattern2 {
-        display: none;
-      }
-    
-      .left_side2 {
-        display: none;
-      }
-      .right_side2 {
-        display: none;
-      }
-    
-      .background_pattern_image2 img {
-        display: none;
-      }
-    
-      .pattern_icon_container2 {
-        display: none;
-      }
-    
-      .right_side_pattern2 img {
-        display: none;
-      }
-    
-      .link {
-        text-align: center;
-        position: relative;
-        top: -75em;
-        z-index: 20;
-      }
-    
-      .link h2 {
-        font-size: 2em;
-        color: white;
-      }
-    
-      .link button {
-        background: #0065fe;
-        padding: 0.7em 3em;
-        border-radius: 1em;
-        border: none;
-      }
-    
-      /* footer _serction css */
-      .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -70rem;
-      }
-      .footer_pattern {
-        display: none;
-      }
-    
-      .scissors_logo_image {
-        margin-top: 1.1em;
-      }
-      .footer_text {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-      }
-      .left_side {
-        display: none;
-      }
-      .right_side {
-        display: none;
-      }
-    
-      .footer_section {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-between;
-        padding: 7em;
-      }
-    
-      .footer_section ul {
-        list-style-type: none;
-      }
-    
-      .footer_text {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    
-      .footer_text div {
-        width: 25%;
-        display: flex;
-        align-items: self-start;
-        flex-direction: column;
-    
-        align-items: center;
-      }
-    
-      .footer_text ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: self-start;
-      }
-    
-      .footer_text ul li h3 {
-        margin: 0.3em 0px;
-        font-weight: bold;
-      }
-      .footer_text ul li {
-        text-wrap: nowrap;
-      }
-    
-      .background_footer {
-        background: rgb(30, 52, 72);
-        position: relative;
-        height: 90rem;
-        width: 100%;
-        top: 30rem;
-        bottom: 0;
-      }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #f5f5e8;
+    font-family: "Inter", system-ui;
+    display: flex;
+    flex-direction: column;
+    gap: 16em;
+  }
+  
+  /* nav css section */
+  nav {
+    position: sticky;
+    top: 0;
+    display: block;
+  border-bottom: 1px solid #1e3448;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+  }
+  
+  nav ul li:nth-child(1) {
+    color: #0065fe;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  
+  }
+  .nav_login {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .nav_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_login button {
+    padding: 0.5em 0.5em;
+    width: 10em;
+    height: 3em;
+    border-radius: 2em;
+    background: #0065fe;
+    border: none;
+  }
+  
+  nav svg{
+    display: none;
+  }
+  /* header section css */
+  header {
+    text-align: center;
+    width: 50rem;
+    margin: 5em auto;
+  }
+  header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: -3em;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  header h1 p:nth-child(2) {
+    display: flex;
+    gap: 0.5em;
+    margin-top: -0.7em;
+  }
+  header em {
+    display: flex;
+    color: #0065fe;
+  }
+  header p {
+    font-weight: bold;
+    margin-top: -0.7em;
+  }
+  
+  .sign_up_container {
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign_up_container button {
+    padding: 0.7em 1em;
+    color: white;
+    background: #0065fe;
+    border: none;
+    border-radius: 2em;
+  }
+  
+  .sign_up_container a {
+    color: #0065fe;
+    text-decoration: none;
+  }
+  
+  .banner_icon_container {
+    margin: 0px auto;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_icon_container img:nth-child(2){
+    width: 100%;
+  }
+  
+  /* users analysis section */
+  
+  .web_user_analysis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3em auto;
+    margin-left: 7em;
+    gap: 1em;
+  }
+  
+  .web_user_analysis h2:nth-child(1) {
+    width: 10em;
+  }
+  
+  .web_user_analysis h3 {
+    width: 8em;
+    font-size: 1.9em;
+    font-weight: bold;
+  }
+  .web_user_analysis h3 p {
+    font-size: 0.5em;
+  }
+  
+  .scissors_section {
+    margin: 1em auto;
+    margin-left: 2.3em;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    gap: 1em;
+    font-weight: bold;
+  }
+  .scissors_heading h2 {
+    font-size: 2em;
+  }
+  .scissors_heading h2 em {
+    color: #0065fe;
+  }
+  .scissors_heading p {
+    font-size: 1.4em;
+  }
+  .scissors_section div p {
+    font-size: 0.9em;
+  }
+  
+  .sciccors_advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sciccors_advantages div {
+    width: 50%;
+  }
+  
+  /* perfect price section */
+  .price_heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .black_line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, white);
+    margin-top: 1em;
+    border-radius: 1em;
+    width: 0.4em;
+    height: 3em;
+  }
+  
+  .perfect_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 0em;
+    text-align: center;
+  }
+  .perfect_price h2 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 0.4em;
+    font-size: 2.5em;
+  }
+  .perfect_price h2 em {
+    color: #0065fe;
+  }
+  
+  .perfect_price p {
+    width: 50em;
+    text-wrap: wrap;
+  }
+  
+  /* card section css */
+  .card_section {
+    display: flex;
+    gap: 0em;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 20em;
+    height: 25em;
+    border: 1px solid #c4c4c0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1em;
+    border-radius: 1em;
+  }
+  
+  .card_two {
+    background: #1e3448;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 22em;
+    height: 34em;
+    border: 1px solid #c4c4c0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1em;
+  }
+  
+  .card ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .card ul li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .card_two_headings {
+    margin-top: 4em;
+  }
+  
+  .card_two ul {
+    display: flex;
+    margin-top: 3em;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  /* pricing buttons css */
+  
+  .pricing_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 3em auto;
+  }
+  
+  .pricing_buttons button {
+    padding: 0.6em;
+    border-radius: 1em;
+    border: 0.1em solid #0065fe;
+  }
+  
+  .pricing_buttons button:nth-child(1) {
+    color: #0065fe;
+    padding: 0.7em 0.6em;
+    width: 10em;
+  }
+  
+  .pricing_buttons button:nth-child(2) {
+    background-color: #0065fe;
+    color: white;
+    padding: 0.6em 0.6em;
+    width: 10em;
+  }
+  
+  /* form css section */
+  .background_pattern_image {
+    width: 100%;
+    height: 60rem;
+    z-index: 10;
+    position: relative;
+    top: -19em;
+  }
+  
+  .background_pattern_image img {
+    width: 100%;
+    height: 60rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .pattern_icon_container {
+    position: absolute;
+    top: 18em;
+    z-index: 20;
+  }
+  
+  .right_side_pattern img {
+    position: absolute;
+    top: -7em;
+    right: 0.2em;
+  }
+  
+  .form_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    z-index: 15;
+  }
+  
+  .form_container form {
+    display: flex;
+    flex-direction: column;
+    background: #f5f5e8;
+    padding: 1.7em 2.5em;
+    border-radius: 2em;
+    position: absolute;
+    top: -77.5em;
+    width: 20em;
+    margin: 2em auto;
+    z-index: 50;
+  }
+  
+  .second_input_row {
+    display: flex;
+    gap: 0.3em;
+    margin: 1.8em auto;
+  }
+  
+  .second_input_row input {
+    width: 12em;
+    height: 2em;
+    border: 1px solid #0065fe;
+    border-radius: 0.8em;
+    padding: 0.2em 0.2em;
+  }
+  
+  input {
+    padding: 0.2em 0.3em;
+  }
+  
+  .first {
+    border: 1px solid #0065fe;
+    width: 25em;
+    height: 2em;
+    border-radius: 0.8em;
+  }
+  
+  .form_container form button {
+    background: #0065fe;
+    border: none;
+    color: white;
+    width: 25em;
+    height: 2.6em;
+    padding: 2.5em 2em;
+    border-radius: 1.9em;
+  }
+  
+  /* summary css section */
+  
+  .faq_section {
+    position: relative;
+    top: -30em;
+    margin: 0.2em auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+    background: #f5f5e8;
+  }
+  
+  .faq_heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .faq_heading .black_line {
+    margin-top: 1em;
+  }
+  summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em 5em;
+    margin: 0.2em auto;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 27em;
+  }
+  
+  summary::after {
+    content: "";
+    width: 18px;
+    height: 15px;
+    background-size: cover;
+    margin-left: 0.75em;
+    transition: 0.2s;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details[open] summary {
+    border-radius: 5px 0;
+  }
+  
+  details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0.1em auto;
+    border-radius: 5px;
+    border-top: 1px solid #c4c4c0;
+  }
+  
+  details summary img {
+    width: 2.5em;
+    height: 1.5em;
+    margin-top: 1.2em;
+  }
+  .detail_section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .detail_section p {
+    font-size: 0.9em;
+  }
+  
+  /* optimization section */
+  
+  .background_pattern_image2 {
+    width: 100%;
+    height: 60rem;
+    z-index: 10;
+    position: relative;
+    top: -40em;
+  }
+  
+  .footer_pattern2 {
+    position: relative;
+    z-index: 30;
+  }
+  
+  .left_side2 {
+    position: absolute;
+    top: -30em;
+  }
+  .right_side2 {
+    position: absolute;
+    top: -19em;
+    left: 45em;
+  }
+  
+  .background_pattern_image2 img {
+    width: 100%;
+    height: 60rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .pattern_icon_container2 {
+    position: relative;
+    top: 3em;
+    right: -2em;
+    transform: rotate(180deg);
+    z-index: 25;
+  }
+  
+  .right_side_pattern2 img {
+    position: absolute;
+    top: 13em;
+    left: 29em;
+    transform: rotate(180deg);
+    z-index: 15;
+  }
+  
+  .link {
+    text-align: center;
+    position: relative;
+    top: -75em;
+    z-index: 20;
+  }
+  
+  
+  .link h2 {
+    font-size: 2em;
+    color: white;
+  }
+  
+  .link button {
+    background: #0065fe;
+    padding: 0.7em 3em;
+    border-radius: 1em;
+    border: none;
+  }
+  
+  /* footer _serction css */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -70rem;
+  }
+  .footer_pattern {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .scissors_logo_image {
+    margin-top: 1.1em;
+  }
+  .footer_text {
+    display: flex;
+    align-items: start;
+  }
+  .left_side {
+    position: absolute;
+    top: 19em;
+    bottom: 0;
+    z-index: -10;
+  }
+  .right_side {
+    position: absolute;
+    top: 30em;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+  }
+  
+  .footer_section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 7em;
+  }
+  
+  .footer_section ul {
+    list-style-type: none;
+  }
+  
+  .footer_text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer_text div {
+    width: 25%;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  .footer_text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+  }
+  
+  .footer_text ul li h3 {
+    margin: 0.3em 0px;
+    font-weight: bold;
+  }
+  .footer_text ul li {
+    text-wrap: nowrap;
+  }
+  
+  .background_footer {
+    background: rgb(30, 52, 72);
+    position: relative;
+    height: 90rem;
+    width: 100%;
+    top: 30rem;
+    bottom: 0;
+  }
+  
+  
+  /* css for smaller screens */
+  
+  
 }
