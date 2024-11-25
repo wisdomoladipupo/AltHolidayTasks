@@ -9,9 +9,11 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: -9rem;
+  font-size: 0.9em;
 }
 nav ul {
   display: flex;
@@ -252,7 +254,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    font-size: 0.9em;
+
   }
   nav ul {
     display: flex;
